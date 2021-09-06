@@ -9,7 +9,85 @@
 </head>
 
 <body style="background-color:rgb(87, 17, 63)">
-    <h1 style="padding-bottom:20%; padding-top:20%;color:white; text-align:center;">Location de voitures anciennes</h1>
+
+    <style>
+        form {
+            width: 100%;
+            padding: 40px;
+            background: rgb(206, 198, 198);
+            box-shadow: 0 0 20px 0 rgba(red, 23, blue, 0.2);
+        }
+        
+        #container {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 10%;
+        }
+        
+        form {
+            width: 100%;
+            padding: 40px;
+            background: rgb(206, 198, 198);
+            box-shadow: 0 0 20px 0 rgba(red, 23, blue, 0.2);
+        }
+        
+        #container h1 {
+            width: 45%;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            padding-bottom: 20px;
+            color: #666;
+            margin: 0 0 30px 0;
+            position: relative;
+            font: normal 26px/1 Verdana, Helvetica;
+        }
+        
+        h1:after,
+        h1:before {
+            background-image: linear-gradient(right, #777, #fff);
+            left: 0;
+            position: absolute;
+            content: "";
+            height: 1px;
+            background-color: #777;
+            top: 15px;
+        }
+        
+        input[type=text],
+        input[ type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+            color: rgb(37, 10, 10);
+            background-color: #cfc8a5;
+            padding: 14px 20px;
+            margin: 8px 0;
+            width: 100%;
+            color: #2b2921;
+            cursor: pointer;
+        }
+    </style>
+    <div id="container">
+        <form action="calculatrice.js" method="POST">
+
+            <h1>calculatrice</h1> <br>
+            <label><b>Entrez un nombre:</b></label>
+
+            <label> <b>Mot de passe:</b></label>
+            <input type="password" placeholder="Votre mot de passe" required>
+            <!--<input id="submit" type="submit" name="password">-->
+            <input type="submit" id='submit' value='LOGIN'>
+
+        </form>
+    </div>
+
+    <script src="./calculatrice.js"></script>
 </body>
 
 </html>
